@@ -1,0 +1,271 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{ margin:0;padding:0;border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }                 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{ display:block; }
+input:focus, textarea:focus {outline: none;}
+li {list-style: none;} a:hover, a {text-decoration: none; color: inherit;}
+h1,h2,h3,h4,h5,h6,p,li {text-align: left;}
+
+@font-face {
+    font-family: 'HN';
+    src: url('fonts/helveticaneue-webfont.eot');
+    src: url('fonts/helveticaneue-webfont.eot?iefix') format('eot'),
+         url('fonts/helveticaneue-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneue-webfont.svg#webfontnvhRePth') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('fonts/century_copy-webfont.eot');
+    src: url('fonts/century_copy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/century_copy-webfont.woff') format('woff'),
+         url('fonts/century_copy-webfont.ttf') format('truetype'),
+         url('fonts/century_copy-webfont.svg#CenturyGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**** Base styles ****/
+
+body {
+font-family: HN, Arial, Verdana;
+color: #ffffff;
+background: #000;
+background-attachment:fixed;
+margin: 0px auto 0px;
+padding: 0px;
+
+}
+
+p, td {
+	
+font: normal 14px/23px HN, Arial, Verdana;
+color: #333;
+text-align: left;
+}
+
+p a {
+color: #507152;
+text-decoration: none;
+}
+
+
+
+p a:hover {
+color: #6DB758;
+text-decoration: none;
+}
+
+h1 {
+font: normal 153px/153px Century, Verdana;
+color: #aaa;
+text-align: center;
+padding: 10px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+
+}
+
+a h1, a h2{
+-webkit-transition: color .25s linear;
+   transition: color .25s linear;
+}
+
+a:hover h1, a:hover h2 {
+color: #fff;
+}
+
+h2 {
+font: normal 50px/50px Century, Verdana;
+color: #aaa;
+text-align: center;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+
+}
+
+/**** front Page ****/
+
+#header {
+  padding: 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#header img {
+width: 200px;
+}
+  
+div[role="main"] {  
+    
+  position:relative;  
+     
+  overflow:hidden;  
+     
+  padding: 0px;
+}  
+ 
+ 
+
+div[role="main"] p { 
+color: #bbb;
+}
+
+div[role="main"] a img{
+
+padding: 3px;
+border: 1px solid #000;
+}
+
+div[role="main"] a:hover img{
+
+border: 1px solid #fff;
+} 
+
+#bio {
+margin: 10px 0 50px 10px;
+width: 502px;
+float: left;
+text-align: justify;
+border-right: 1px solid #fff;
+padding: 0 20px 10px 0;
+}
+
+#logo {
+width: 150px;
+float: right;
+margin: 30px 40px 5px 0;
+}
+
+p.contact {
+font: normal 18px/23px Century, Verdana;
+text-align: center;
+}
+
+.center {
+  padding: 0px 0px 0px 0;
+  margin: 0px auto 0px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+/* fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1;}
+
+/* LIGHTBOX */
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+/* SLIMBOX */
+
+#lbOverlay {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter, #lbBottomContainer {
+	position: absolute;
+	left: 50%;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.lbLoading {
+	background: #fff url(images/loading.gif) no-repeat center;
+}
+
+#lbImage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 10px solid #fff;
+	background-repeat: no-repeat;
+}
+
+#lbPrevLink, #lbNextLink {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	outline: none;
+}
+
+#lbPrevLink {
+	left: 0;
+}
+
+#lbPrevLink:hover {
+	background: transparent url(images/prevlabel.gif) no-repeat 0% 15%;
+}
+
+#lbNextLink {
+	right: 0;
+}
+
+#lbNextLink:hover {
+	background: transparent url(images/nextlabel.gif) no-repeat 100% 15%;
+}
+
+#lbBottom {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#lbCloseLink {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(images/closelabel.gif) no-repeat center;
+	margin: 5px 0;
+}
+
+#lbCaption, #lbNumber {
+	margin-right: 71px;
+}
+
+#lbCaption {
+	font-weight: bold;
+}
+
+/* ]]> */
