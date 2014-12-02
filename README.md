@@ -3,4 +3,4 @@ modisarch
 
 Architectural Models made by Nashville, Tennessee Architect Tommy Brown
 
-[b.illbrown.com/modisarch](b.illbrown.com/modisarch)
+[http://b.illbrown.com/modisarch](http://b.illbrown.com/modisarch)
